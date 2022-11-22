@@ -14,7 +14,8 @@ function App() {
 		let result = '';
 		for (let i = 0; i < text.length; i++) {
 			let char = text[i];
-			if (char.charCodeAt(0) == 32) {
+			let thing = char.charCodeAt(0);
+			if (thing < 65 || thing > 122 || (thing > 90 && thing < 97)) {
 				let ch = char;
 				result += ch;
 			} else if (char.toUpperCase(text[i]) === text[i]) {
