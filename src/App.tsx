@@ -91,7 +91,7 @@ function App() {
 					onClick={() => setEncoding((encoding) => !encoding)}>
 					Switch to {encoding ? 'Decode' : 'Encode'}
 				</button>
-				<h2 className='p-2'>Shift Value</h2>
+				{/* <h2 className='p-2'>Shift Value</h2>
 				<input
 					type={'number'}
 					className='bg-slate-600 p-2 rounded-sm '
@@ -99,7 +99,7 @@ function App() {
 					onChange={(e: any) => {
 						e.target.value < 26 && setShift(e.target.value);
 					}}
-				/>
+				/> */}
 			</div>
 			<article>
 				<p className='m-2'>
